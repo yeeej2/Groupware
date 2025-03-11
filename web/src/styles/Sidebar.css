@@ -1,0 +1,56 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+    /* 세로 전체를 차지하는 고정(fixed) 레이아웃 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  
+    width: 60px;              /* 사이드바 폭 */
+    background-color: #2d3f52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+  
+    /* 스크롤바가 생길 때, 보조 속성 */
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .sidebar-icon-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* 가운데 정렬 */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidebar-icon-btn {
+    border: none;
+    background: none;
+    color: white; /* 살짝 투명한 흰색 */
+    cursor: pointer;
+    font-size: 20px;
+    /* 원하는 여백 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .sidebar-icon-btn:hover {
+    color: #ffffff;  /* 호버 시 선명한 흰색 */
+  }
+  
+  .sidebar-divider {
+    width: 80%;
+    border: none;
+    border-top: 1px solid #4c5a6b;
+    margin: 1rem 0;
+  }
+  

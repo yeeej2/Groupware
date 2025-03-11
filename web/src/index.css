@@ -1,0 +1,66 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /*글꼴:순차적*/
+  line-height: 1.5; /*줄간격*/
+  font-weight: 400; /*글두께*/
+
+  color-scheme: light dark; /*문서가 밝은 테마와 어두운 테마 모두를 지원*/
+  color: rgba(255, 255, 255, 0.87); /*글색상*/
+  background-color: #242424; /*배경색*/
+
+  font-synthesis: none; /*브라우저가 지정된 글꼴에서 특정 굵기나 스타일(예: 이탤릭)이 없는 경우, 인위적으로 굵게(bold) 또는 기울임체(italic)로 변환하는 것을 방지*/
+  text-rendering: optimizeLegibility; /*텍스트 렌더링을 최적화*/
+  -webkit-font-smoothing: antialiased; /*WebKit 기반 브라우저(예: Safari)에서 글꼴의 계단 현상을 줄이기 위해 안티앨리어싱을 적용*/
+  -moz-osx-font-smoothing: grayscale; /*Firefox가 macOS에서 글꼴 렌더링을 할 때, 회색조 안티앨리어싱을 적용하여 부드러운 글자 표현 도움*/
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

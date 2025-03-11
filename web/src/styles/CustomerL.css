@@ -1,0 +1,50 @@
+  /* 페이지 전체 컨테이너 */
+  .customer-container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+
+
+    /* 스크롤바가 생길 때, 보조 속성 */
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  /* 왼쪽 패널 */
+  .left-panel {
+    width: 150px;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    padding: 1rem;
+    background-color: palegreen;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .menu-btn,
+  .search-btn {
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  
+  .menu-btn:hover,
+  .search-btn:hover {
+    background-color: #eee;
+  }
+  
+  /* 오른쪽 카드 패널 */
+  .right-panel {
+    flex: 1;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  

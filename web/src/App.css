@@ -1,0 +1,19 @@
+/* App.css */
+
+.layout {
+  display: flex;         /* 이 div의 자식들이 flex item이 됨 */
+  min-height: 100vh;     /* 전체 화면 높이를 채우고 싶다면 추가 */
+}
+
+.container {
+  /* 사이드 바 고정 넓이 60px */
+  flex: 0 0 60px;
+  background-color: red;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  background-color: blue;
+  min-height: 100vh;
+}
